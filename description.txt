@@ -1,0 +1,5 @@
+Step 1: A pin is periodically read (either at a specified time by Timer0 or by a delay function - every 50 seconds).
+
+Step 2: If the pin reads 'H' (indicating low water level in the reservoir - detected by a resistance sensor between two electrodes), a preset time of 45 seconds is initiated (again using Timer or delay function) to activate a pump - controlled by another pin adjusting a motor with PWM at 70%. Then return to Step 1.
+
+Step 3: If the pin reads 'L' (indicating acceptable water level), return to Step 1.
